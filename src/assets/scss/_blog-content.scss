@@ -1,0 +1,57 @@
+.article-list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 15px;
+	justify-content: center;
+  }
+.article-container {
+	background-color: #f9f9f9;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	padding: 7px;
+	width: calc(33.5% - 8px); /* Cambia el ancho para mostrar dos por columna */
+	box-sizing: border-box;
+  }
+  
+  .article-container img {
+	max-width: 100%;
+	height: auto;
+  }
+  
+  .article-body {
+	margin-top: 10px;
+  }
+  
+  .article-footer {
+	font-size: 12px;
+	color: #777;
+  }
+  
+  /* Estilo para los botones de categoría */
+  .categories-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 13px;
+	margin-top: 20px;
+  }
+  
+  .btn-category {
+	background-color: $indigo;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	padding: 5px 10px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+  }
+  
+  .btn-category:hover {
+	background-color: $turquese;
+  }
+  
+  .btn-category.selected {
+	background-color: $grey1; /* Cambia el color a tu elección */
+	color: #fff; /* Cambia el color del texto a tu elección */
+  }
+  
